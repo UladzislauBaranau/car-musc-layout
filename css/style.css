@@ -2,6 +2,26 @@
     max-width: 1006px;
     margin: 0 auto;
 }
+.description {
+    font-family: 'ReformaGroteskMediumC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.uppercase-text {
+    font-family: 'ReformaGroteskDemiC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
 /* Header styles */
 .header {
@@ -138,3 +158,81 @@
     margin-bottom: 20px;
 }
 /* Info styles end */
+
+/* Achievements styles */
+.achievements {
+    background-color: #1E1E1E;
+    background-size: cover;
+}
+.achievements__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 25px;
+    padding-top: 80px;
+}
+.achievements__title {
+    max-width: 500px;
+    font-family: 'ReformaGroteskDemiC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.achievements__rectangles {
+    margin-top: 20px;
+}
+.achievements__content {
+    margin-top: 20px;
+    max-width: 450px;
+}
+.achievement__table {
+    display: flex;
+}
+.achievement__first-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.achievement__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+}
+.achievement__number {
+    font-size: 3.25rem;
+    font-family: ReformaGroteskDemiC;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #DB3138;
+}
+.achievement__number span {
+    font-size: 1.5rem;
+}
+.achievement__text {
+    max-width: 200px;
+}
+.achievement__second-column {
+    margin-top: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.achievement__cup-img {
+    margin-bottom: 10px;
+}
+/* Achievements styles end */
+
+/* Scrolling styles */
+.scrolling {
+    background-color: #1E1E1E;
+    background-size: cover;
+}
+/* Scrolling styles end */
