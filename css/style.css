@@ -234,5 +234,36 @@
 .scrolling {
     background-color: #1E1E1E;
     background-size: cover;
+    padding-top: 80px;
+}
+.scrolling__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.scrolling__button {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+}
+.scrolling__images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 20px;
+}
+.scrolling__card {
+    width: 80%;
+    height: 50px;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DB3138;
+}
+.scrolling__card-info {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
 }
 /* Scrolling styles end */
