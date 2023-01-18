@@ -1,7 +1,6 @@
 body {
     font-family: 'ReformaGroteskDemiC';
-    background-color: #1E1E1E;
-    background-size: cover;
+    background-color: #141414;
 }
 
 .wrapper {
@@ -105,12 +104,14 @@ body {
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid #FFFFFF;
+    border-top: 1px solid #898989;
 }
 .intro__item {
     grid-column: span 1;
-    border-right: 1px solid #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
+    border-right: 1px solid #898989;
+    border-bottom: 1px solid #898989;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .intro__item:last-child{
     border-right: none;
@@ -183,7 +184,7 @@ body {
     align-items: center;
     height: 150px;
     text-align: center;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #898989;
 }
 .achievement__number {
     font-size: 3.25rem;
@@ -211,8 +212,6 @@ body {
 
 /* Scrolling styles */
 .scrolling {
-    background-color: #1E1E1E;
-    background-size: cover;
     padding-top: 80px;
 }
 .scrolling__wrapper {
