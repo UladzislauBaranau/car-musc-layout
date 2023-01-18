@@ -4,7 +4,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1006px;
+    max-width: 70%;
     margin: 0 auto;
 }
 
@@ -35,7 +35,6 @@ body {
 
 /* Intro styles */
 .intro {
-    min-height: 100vh;
     background: url(../img/index/svg/background.svg) no-repeat center;
     background-size: cover;
     padding-top: 30px;
@@ -80,8 +79,7 @@ body {
 }
 .intro__subtitle{
     margin: 0 auto;
-    width: 340px;
-    height: 96px;
+    width: 25%;
     font-family: 'ReformaGroteskMediumC';
     font-style: normal;
     font-weight: 500;
@@ -89,6 +87,7 @@ body {
     line-height: 120%;
     color: #FFFFFF;
     text-align: center;
+    padding-bottom: 20px;
 }
 .intro__button {
     margin: 0 auto;
@@ -129,7 +128,7 @@ body {
     color: #FFFFFF;
 }
 .intro__item-content {
-    max-width: 200px;
+    max-width: 50%;
     margin: 0 auto;
     font-style: normal;
     font-weight: 600;
@@ -153,10 +152,9 @@ body {
     padding-top: 80px;
 }
 .achievements__title {
-    max-width: 500px;
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 38px;
     line-height: 140%;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -167,7 +165,7 @@ body {
 }
 .achievements__content {
     margin-top: 20px;
-    max-width: 450px;
+    max-width: 95%;
 }
 .achievement__table {
     display: flex;
@@ -182,11 +180,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
     text-align: center;
     border: 1px solid #898989;
 }
 .achievement__number {
+    padding-top: 30px;
     font-size: 3.25rem;
     text-align: center;
     letter-spacing: 0.05em;
@@ -197,7 +195,8 @@ body {
     font-size: 1.5rem;
 }
 .achievement__text {
-    max-width: 200px;
+    max-width: 90%;
+    padding-bottom: 30px;
 }
 .achievement__second-column {
     margin-top: 30px;
@@ -206,7 +205,8 @@ body {
     flex-direction: column;
 }
 .achievement__cup-img {
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 /* Achievements styles end */
 
@@ -232,13 +232,13 @@ body {
 }
 .scrolling__card {
     width: 80%;
-    height: 50px;
+    height: 15%;
     transform: translateY(-50%);
     margin: 0 auto;
     background-color: #DB3138;
 }
 .scrolling__card-info {
-    max-width: 70%;
+    max-width: 80%;
     padding-top: 25px;
     margin: 0 auto;
 }
