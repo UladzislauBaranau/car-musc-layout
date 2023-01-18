@@ -1,7 +1,18 @@
+body {
+    font-family: 'ReformaGroteskDemiC';
+    background-color: #1E1E1E;
+    background-size: cover;
+}
+
 .wrapper {
     max-width: 1006px;
     margin: 0 auto;
 }
+
+.rectangle-style {
+    margin-right: 10px;
+}
+
 .description {
     font-family: 'ReformaGroteskMediumC';
     font-style: normal;
@@ -11,8 +22,8 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
+
 .uppercase-text {
-    font-family: 'ReformaGroteskDemiC';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -23,41 +34,34 @@
     color: #FFFFFF;
 }
 
-/* Header styles */
-.header {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-}
-.header__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.header__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-.header__item {
-    margin-right: 20px;
-}
-.header__link {
-    font-family: 'ReformaGroteskMediumC';
-    font-size: 25px;
-    line-height: 100%;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-/* Header styles end */
-
 /* Intro styles */
 .intro {
     min-height: 100vh;
     background: url(../img/index/svg/background.svg) no-repeat center;
     background-size: cover;
-    padding-top: 100px;
+    padding-top: 30px;
+}
+.intro__header {
+    margin-bottom: 50px;
+}
+.intro__header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.intro__header-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.intro__header-item {
+    margin-right: 20px;
+}
+.intro__header-link {
+    font-family: 'ReformaGroteskMediumC';
+    font-size: 25px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 .intro__title {
     display: flex;
@@ -91,72 +95,56 @@
     margin: 0 auto;
     display: block;
     padding: 15px 25px;
-    font-family: "ReformaGroteskDemiC";
     font-size: 20px;
     color: #FFFFFF;
     background-color: #DB3138;
     border: 0;
     text-transform: uppercase;
 }
-/* Intro styles end */
-
-/* Info styles */
-.info__wrap {
-    position: position;
-}
-.info__items {
-    width: 100vw;
-    position: absolute;
-    transform: translateY(-100%);
+.intro__items {
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-top: 1px solid #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
 }
-.info__item {
+.intro__item {
     grid-column: span 1;
     border-right: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
 }
-.info__item:last-child{
+.intro__item:last-child{
     border-right: none;
 }
-.info__item-title {
+.intro__item-title {
     margin-top: 20px;
     margin-bottom: 15px;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 140%;
-    font-family: "ReformaGroteskDemiC";
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
     color: #FFFFFF;
 }
-.info__item-content {
+.intro__item-content {
     max-width: 200px;
     margin: 0 auto;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 140%;
-    font-family: "ReformaGroteskDemiC";
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
     color: #DB3138;
 }
-.info__item-content:last-child{
+.intro__item-content:last-child{
     margin-bottom: 20px;
 }
-/* Info styles end */
+/* Intro styles end */
 
 /* Achievements styles */
-.achievements {
-    background-color: #1E1E1E;
-    background-size: cover;
-}
 .achievements__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -165,7 +153,6 @@
 }
 .achievements__title {
     max-width: 500px;
-    font-family: 'ReformaGroteskDemiC';
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -200,7 +187,6 @@
 }
 .achievement__number {
     font-size: 3.25rem;
-    font-family: ReformaGroteskDemiC;
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
