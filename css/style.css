@@ -1,7 +1,17 @@
+body {
+    font-family: 'ReformaGroteskDemiC';
+    background-color: #141414;
+}
+
 .wrapper {
-    max-width: 1006px;
+    max-width: 70%;
     margin: 0 auto;
 }
+
+.rectangle-style {
+    margin-right: 10px;
+}
+
 .description {
     font-family: 'ReformaGroteskMediumC';
     font-style: normal;
@@ -11,8 +21,8 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
+
 .uppercase-text {
-    font-family: 'ReformaGroteskDemiC';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -23,49 +33,37 @@
     color: #FFFFFF;
 }
 
-/* Header styles */
-.header {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
+/* Intro styles */
+.intro {
+    background: url(../img/index/svg/background.svg) no-repeat center;
+    background-size: cover;
+    padding-top: 30px;
 }
-.header__wrapper {
+.intro__header {
+    margin-bottom: 50px;
+}
+.intro__header-wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
-.header__list {
+.intro__header-list {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
 }
-.header__item {
+.intro__header-item {
     margin-right: 20px;
 }
-.header__item:last-child{
-    margin-right: 0;
-}
-.header__link {
+.intro__header-link {
     font-family: 'ReformaGroteskMediumC';
     font-size: 25px;
     line-height: 100%;
     color: #FFFFFF;
     text-decoration: none;
 }
-/* Header styles end */
-
-/* Intro styles */
-.intro {
-    min-height: 100vh;
-    background: url(../img/index/svg/background.svg) no-repeat center;
-    background-size: cover;
-    padding-top: 100px;
-}
 .intro__title {
-    width: 310px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
     font-family: 'ReformaGroteskBoldC';
     text-transform: uppercase;
     font-style: normal;
@@ -75,16 +73,13 @@
     color: #DB3138;
 }
 .intro__rectangles {
-    width: 76px;
-    height: 36px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 .intro__subtitle{
-    width: 340px;
-    height: 96px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    width: 25%;
     font-family: 'ReformaGroteskMediumC';
     font-style: normal;
     font-weight: 500;
@@ -92,78 +87,64 @@
     line-height: 120%;
     color: #FFFFFF;
     text-align: center;
+    padding-bottom: 20px;
 }
 .intro__button {
     margin: 0 auto;
     display: block;
     padding: 15px 25px;
-    font-family: "ReformaGroteskDemiC";
     font-size: 20px;
     color: #FFFFFF;
     background-color: #DB3138;
     border: 0;
     text-transform: uppercase;
 }
-/* Intro styles end */
-
-/* Info styles */
-.info__wrap {
-    position: position;
-}
-.info__items {
-    width: 100vw;
-    position: absolute;
-    transform: translateY(-100%);
+.intro__items {
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #898989;
 }
-.info__item {
+.intro__item {
     grid-column: span 1;
-    border-right: 1px solid #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
+    border-right: 1px solid #898989;
+    border-bottom: 1px solid #898989;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.info__item:last-child{
+.intro__item:last-child{
     border-right: none;
 }
-.info__item-title {
+.intro__item-title {
     margin-top: 20px;
     margin-bottom: 15px;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 140%;
-    font-family: "ReformaGroteskDemiC";
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
     color: #FFFFFF;
 }
-.info__item-content {
-    max-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+.intro__item-content {
+    max-width: 50%;
+    margin: 0 auto;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 140%;
-    font-family: "ReformaGroteskDemiC";
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
     color: #DB3138;
 }
-.info__item-content:last-child{
+.intro__item-content:last-child{
     margin-bottom: 20px;
 }
-/* Info styles end */
+/* Intro styles end */
 
 /* Achievements styles */
-.achievements {
-    background-color: #1E1E1E;
-    background-size: cover;
-}
 .achievements__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -171,11 +152,9 @@
     padding-top: 80px;
 }
 .achievements__title {
-    max-width: 500px;
-    font-family: 'ReformaGroteskDemiC';
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 38px;
     line-height: 140%;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -186,7 +165,7 @@
 }
 .achievements__content {
     margin-top: 20px;
-    max-width: 450px;
+    max-width: 95%;
 }
 .achievement__table {
     display: flex;
@@ -201,13 +180,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
     text-align: center;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #898989;
 }
 .achievement__number {
+    padding-top: 30px;
     font-size: 3.25rem;
-    font-family: ReformaGroteskDemiC;
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -217,7 +195,8 @@
     font-size: 1.5rem;
 }
 .achievement__text {
-    max-width: 200px;
+    max-width: 90%;
+    padding-bottom: 30px;
 }
 .achievement__second-column {
     margin-top: 30px;
@@ -226,13 +205,41 @@
     flex-direction: column;
 }
 .achievement__cup-img {
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 /* Achievements styles end */
 
 /* Scrolling styles */
 .scrolling {
-    background-color: #1E1E1E;
-    background-size: cover;
+    padding-top: 80px;
+}
+.scrolling__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.scrolling__button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+.scrolling__images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 20px;
+}
+.scrolling__card {
+    width: 80%;
+    height: 15%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    background-color: #DB3138;
+}
+.scrolling__card-info {
+    max-width: 80%;
+    padding-top: 25px;
+    margin: 0 auto;
 }
 /* Scrolling styles end */
