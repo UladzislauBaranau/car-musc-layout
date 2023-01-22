@@ -33,6 +33,16 @@ body {
     color: #FFFFFF;
 }
 
+.title-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 /* Intro styles */
 .intro {
     background: url(../img/index/svg/background.svg) no-repeat center;
@@ -151,15 +161,6 @@ body {
     grid-gap: 0 25px;
     padding-top: 80px;
 }
-.achievements__title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 38px;
-    line-height: 140%;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
 .achievements__rectangles {
     margin-top: 20px;
 }
@@ -261,6 +262,9 @@ body {
 .material__info-card-icon {
     padding-right: 30px;
 }
+.material__info-card-icon_car {
+    padding-right: 40px;
+}
 .material__info-card-text {
     font-style: normal;
     font-size: 25px;
@@ -286,3 +290,130 @@ body {
     max-width: 65%;
 }
 /* Materials styles end */
+
+/* Services styles */
+.services {
+    padding-top: 80px;
+}
+.services__title {
+    display: flex;
+    justify-content: center;
+}
+.services__rectangles {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.services__list-buttons {
+    display: flex;
+    margin: 30px 350px;
+}
+.services__button {
+    margin: 0 auto;
+    display: block;
+    font-size: 25px;
+    color: #FFFFFF;
+    background-color: #DB3138;
+    border: 0;
+}
+.services__button-pasting {
+    padding: 15px 25px;
+    background-color: #DB3138;
+    text-transform: uppercase;
+}
+.services__button-detailing {
+    padding: 15px 25px;
+    background-color: #141414;
+    text-transform: uppercase;
+}
+.services__cards {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%;
+}
+.services__card {
+    border: 1px solid #898989;
+}
+.services__card-title {
+    padding-top: 60px;
+    text-align: center;
+}
+.services__card-title-icon {
+    height: 70.34px;
+}
+.services__card-title-text {
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.services__card-content {
+    margin: 0 auto;
+    padding-top: 20px;
+    max-width: 70%;
+}
+.services__card-button {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.services__submit {
+    margin: 0 auto;
+    display: block;
+    padding: 15px 25px;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #DB3138;
+    text-transform: uppercase;
+    border: 0;
+}
+/* Services styles end */
+
+/* Masters styles */
+.masters {
+    padding-top: 80px;
+}
+.masters__info {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    grid-gap: 7%;
+    align-items: center;
+}
+.masters__info-card-title {
+    display: flex;
+    align-items: center;
+}
+.masters__info-card-icon {
+    padding-right: 30px;
+}
+.masters__info-card-icon_car {
+    padding-right: 40px;
+}
+.masters__info-card-text {
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.masters__info-text {
+    padding-top: 20px;
+}
+.masters__rectangles {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.masters__scrolling {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.masters__image-text {
+    max-width: 65%;
+}
+/* Masters styles end */
