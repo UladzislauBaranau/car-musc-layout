@@ -232,22 +232,28 @@ body {
     margin: 0 auto;
 
 }
-.scrolling__images {
+.scrolling__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0 20px;
 }
-.scrolling__card {
-    width: 80%;
-    height: 15%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    background-color: #DB3138;
+.scrolling__description {
+    position: relative;
 }
 .scrolling__card-info {
-    max-width: 80%;
-    padding-top: 25px;
+    width: 70%;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.scrolling__card-background {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    top: -48%;
+    left: 5%;
+    z-index: 1;
+    background-color: #DB3138;
 }
 /* Scrolling styles end */
 
