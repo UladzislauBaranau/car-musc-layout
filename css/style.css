@@ -43,6 +43,27 @@ body {
     color: #FFFFFF;
 }
 
+.link {
+    font-family: 'ReformaGroteskMediumC';
+    font-size: 25px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.header-footer-item {
+    margin-right: 20px;
+}
+.header-footer-item:last-child{
+    margin-right: 0px;
+}
+
 /* Intro styles */
 .intro {
     background: url(../img/index/svg/background.svg) no-repeat center;
@@ -55,21 +76,6 @@ body {
 .intro__header-wrapper {
     display: flex;
     justify-content: space-between;
-}
-.intro__header-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-.intro__header-item {
-    margin-right: 20px;
-}
-.intro__header-link {
-    font-family: 'ReformaGroteskMediumC';
-    font-size: 25px;
-    line-height: 100%;
-    color: #FFFFFF;
-    text-decoration: none;
 }
 .intro__title {
     display: flex;
@@ -226,22 +232,28 @@ body {
     margin: 0 auto;
 
 }
-.scrolling__images {
+.scrolling__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0 20px;
 }
-.scrolling__card {
-    width: 80%;
-    height: 15%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    background-color: #DB3138;
+.scrolling__description {
+    position: relative;
 }
 .scrolling__card-info {
-    max-width: 80%;
-    padding-top: 25px;
+    width: 70%;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.scrolling__card-background {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    top: -48%;
+    left: 5%;
+    z-index: 1;
+    background-color: #DB3138;
 }
 /* Scrolling styles end */
 
@@ -417,3 +429,130 @@ body {
     max-width: 65%;
 }
 /* Masters styles end */
+
+/* Our works styles */
+.our-works {
+    padding-top: 80px;
+}
+.our-works__title {
+    display: flex;
+    justify-content: center;
+}
+.our-works__rectangles {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.our-works__image {
+    padding-top: 30px;
+}
+/* Our works styles end */
+
+/* Question form styles */
+.question {
+    padding-top: 80px;
+}
+.question__title {
+    display: flex;
+    justify-content: center;
+}
+.question__rectangles {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.question__form-wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.question__from-info {
+    display: flex;
+    justify-content: center;
+}
+.question__form-name {
+    width: 100%;
+    padding: 10px 0 10px 20px;
+    border: 1px solid #DB3138;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+.question__form-phone {
+    width: 100%;
+    padding: 10px 0 10px 20px;
+    border: 1px solid #898989;
+    text-transform: uppercase;
+    color: #898989;
+    margin-left: 10px;
+}
+.question__form-items {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 0.2fr;
+    grid-gap: 10%;
+}
+.question__form-textarea {
+    padding: 15px 0 120px 20px;
+    text-transform: uppercase;
+    border: 1px solid #898989;
+}
+.question__textarea {
+    width: 80%;
+    text-transform: uppercase;
+    color: #898989;
+}
+.question__form-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.question__form-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question__buttom-submit {
+    display: block;
+    padding: 15px 25px;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #DB3138;
+    text-transform: uppercase;
+    border: 0;
+}
+.question__about {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.question__about-icon {
+    padding-right: 10px;
+}
+.question__about-text-phone {
+    padding-right: 20px;
+}
+/* Question form styles end */
+
+/* Footer styles */
+.footer {
+    margin-top: 80px;
+    border-top: 1px solid #898989;
+    align-items: center;
+}
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer__text {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #898989;
+}
+/* Footer styles end */
