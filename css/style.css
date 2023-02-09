@@ -265,7 +265,6 @@ body {
     display: grid;
     grid-template-columns: 0.9fr 1fr;
     grid-gap: 7%;
-    align-items: center;
 }
 .material__info-card-title {
     display: flex;
@@ -326,7 +325,6 @@ body {
     display: block;
     font-size: 25px;
     color: #FFFFFF;
-    background-color: #DB3138;
     border: 0;
 }
 .services__button-pasting {
@@ -393,7 +391,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 0.9fr;
     grid-gap: 7%;
-    align-items: center;
 }
 .masters__info-card-title {
     display: flex;
@@ -557,3 +554,108 @@ body {
     color: #898989;
 }
 /* Footer styles end */
+
+/* Media styles for 1024px width */
+@media (max-width: 1024px) {
+    .title-text {
+        font-size: 28px;
+    }
+    .link {
+        font-size: 20px;
+    }
+    .header-footer-item {
+        margin-right: 13px;
+    }
+    .header__dropdown-img {
+        max-width: 80%;
+    }
+    .intro__title {
+       font-size: 80px;
+    }
+    .intro__subtitle {
+        font-size: 24px;
+    }
+    .intro__button {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+    .intro__items {
+        margin-top: 80px;
+    }
+    .intro__item {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .intro__item-title {
+        font-size: 13px;
+    }
+    .intro__item-content {
+        font-size: 13px;
+    }
+    .achievement__number {
+        font-size: 3rem;
+    }
+    .scrolling__scrolling-left-button-img {
+        max-width: 90%;
+    }
+    .scrolling__scrolling-right-button-img {
+        max-width: 90%;
+    }
+    .material__info-card-text {
+        font-size: 20px;
+    }
+    .material__info-card-icon_car {
+        padding-right: 30px;
+        max-width: 60%;
+    }
+    .material__info-card-icon {
+        padding-right: 20px;
+        max-width: 60%;
+    }
+    .materials__scrolling-right-button-img {
+        max-width: 15%;
+    }
+    .services__button {
+        font-size: 16px;
+    }
+    .services__button-pasting {
+        padding: 12px 20px;
+    }
+    .services__submit {
+        padding: 12px 20px;
+    }
+    .masters__info-card-text {
+        font-size: 20px;
+    }
+    .masters__info-card-icon {
+        padding-right: 20px;
+        max-width: 60%;
+    }
+    .masters__info-card-icon_car {
+        padding-right: 30px;
+        max-width: 60%;
+    }
+    .masters__scrolling-right-button-img {
+        max-width: 15%;
+    }
+    .question__form-items {
+        grid-gap: 5%;
+    }
+    .question__form-textarea {
+        padding: 12px 0 90px 10px;
+    }
+    .question__buttom-submit {
+        padding: 12px 20px;
+    }
+    .question__about {
+        width: 70%;
+    }
+    .question__about-icon {
+        max-width: 80%;
+        padding-right: 7px;
+    }
+    .footer__text {
+        font-size: 11px;
+    }
+}
+/* Media styles for 1024px end */
