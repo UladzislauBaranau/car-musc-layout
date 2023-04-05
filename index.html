@@ -13,33 +13,34 @@
 <body>
     <div class="calculator">
         <div class="calculator-display">
-            <p class="display-text">0</p>
+            <input type="text" class="display-value" value="" disabled placeholder="0"/>
         </div>
         <div class="buttons">
-            <button class="button button__clear-display" onclick="clearDisplay()">AC</button>
-            <button class="button button__switch" onclick="switchPlusMinus()">+/-</button>
-            <button class="button button__math-operator" onclick="mathOperator('%')">%</button>
-            <button class="button button__math-operator" onclick="mathOperator('/')">/</button>
+            <button class="button button__all-clear" value="all-clear">AC</button>
+            <button class="button button__switch-plus-minus">+/-</button>
+            <button class="button button__math-operator" value="%">%</button>
+            <button class="button button__math-operator" value="/">/</button>
 
-            <button class="button button__digit" onclick="getDigit('7')">7</button>
-            <button class="button button__digit" onclick="getDigit('8')">8</button>
-            <button class="button button__digit" onclick="getDigit('9')">9</button>
-            <button class="button button__math-operator" onclick="mathOperator('*')">x</button>
+            <button class="button button__digit" value="7">7</button>
+            <button class="button button__digit" value="8">8</button>
+            <button class="button button__digit" value="9">9</button>
+            <button class="button button__math-operator" value="*">x</button>
 
-            <button class="button button__digit" onclick="getDigit('4')">4</button>
-            <button class="button button__digit" onclick="getDigit('5')">5</button>
-            <button class="button button__digit" onclick="getDigit('6')">6</button>
-            <button class="button button__math-operator" onclick="mathOperator('-')">-</button>
+            <button class="button button__digit" value="4">4</button>
+            <button class="button button__digit" value="5">5</button>
+            <button class="button button__digit" value="6">6</button>
+            <button class="button button__math-operator" value="-">-</button>
 
-            <button class="button button__digit" onclick="getDigit('1')">1</button>
-            <button class="button button__digit" onclick="getDigit('2')">2</button>
-            <button class="button button__digit" onclick="getDigit('3')">3</button>
-            <button class="button button__math-operator" onclick="mathOperator('+')">+</button>
+            <button class="button button__digit" value="1">1</button>
+            <button class="button button__digit" value="2">2</button>
+            <button class="button button__digit" value="3">3</button>
+            <button class="button button__math-operator" value="+">+</button>
 
-            <button class="button button__digit-zero" onclick="getDigit('0')">0</button>
-            <button class="button button__math-operator" onclick="getDigit(',')">,</button>
-            <button class="button button__math-operator" onclick="getDigit('=')">=</button>
+            <button class="button button__digit-zero" value="0">0</button>
+            <button class="button button__decimal" value=".">.</button>
+            <button class="button button__math-operator" value="=">=</button>
         </div>
     </div>
+    <script defer type="module" src="js/main.js"></script>
 </body>
 </html>
