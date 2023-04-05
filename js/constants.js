@@ -1,4 +1,4 @@
-const Constants = {
+const MATH_OPERATORS = {
     ADDITION: '+',
     SUBTRACTION: '-',
     MULTIPLICATION: '*',
@@ -14,4 +14,4 @@ const AUXILIARY_OPERATIONS = {
     MINUS: '-'
 }
 
-export {Constants, AUXILIARY_OPERATIONS};
+export {MATH_OPERATORS, AUXILIARY_OPERATIONS};

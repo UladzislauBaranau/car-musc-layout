@@ -1,4 +1,4 @@
-import {Constants, AUXILIARY_OPERATIONS} from "./constants.js";
+import {MATH_OPERATORS, AUXILIARY_OPERATIONS} from "./constants.js";
 
 const calculator = {
     displayValue: '0',
@@ -42,18 +42,19 @@ function addDecimal(comma) {
 
 function processMathOperator(mathOperator) {
     const {firstDigit, displayValue, operator} = calculator;
+    const floatDisplayValue = parseFloat(displayValue)
 
     if (operator && calculator.waitingForSecondDigit) {
         calculator.operator = mathOperator;
         return;
     }
 
-    if (firstDigit == null && !isNaN(displayValue)) {
-        calculator.firstDigit = displayValue;
+    if (firstDigit == null && !isNaN(floatDisplayValue)) {
+        calculator.firstDigit = floatDisplayValue;
     }
 
     if (operator) {
-        const result = calculate(firstDigit, displayValue, operator);
+        const result = calculate(firstDigit, floatDisplayValue, operator);
         calculator.displayValue = String(result);
         calculator.firstDigit = result;
     }
@@ -65,19 +66,19 @@ function processMathOperator(mathOperator) {
 
 function calculate(firstDigit, secondDigit, operator) {
     switch (operator) {
-        case Constants.ADDITION:
+        case MATH_OPERATORS.ADDITION:
             return firstDigit + secondDigit;
 
-        case Constants.SUBTRACTION:
+        case MATH_OPERATORS.SUBTRACTION:
             return firstDigit - secondDigit;
 
-        case Constants.MULTIPLICATION:
+        case MATH_OPERATORS.MULTIPLICATION:
             return firstDigit * secondDigit;
 
-        case Constants.DIVISION:
+        case MATH_OPERATORS.DIVISION:
             return firstDigit / secondDigit;
 
-        case Constants.EQUALLY:
+        case MATH_OPERATORS.EQUALLY:
             return secondDigit;
     }
 }
@@ -89,11 +90,11 @@ buttons.addEventListener('click', (event) => {
     const {value} = target;
 
     switch (value) {
-        case Constants.ADDITION:
-        case Constants.SUBTRACTION:
-        case Constants.MULTIPLICATION:
-        case Constants.DIVISION:
-        case Constants.EQUALLY:
+        case MATH_OPERATORS.ADDITION:
+        case MATH_OPERATORS.SUBTRACTION:
+        case MATH_OPERATORS.MULTIPLICATION:
+        case MATH_OPERATORS.DIVISION:
+        case MATH_OPERATORS.EQUALLY:
             processMathOperator(value);
             break;
         case AUXILIARY_OPERATIONS.DECIMAL:
